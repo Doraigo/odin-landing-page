@@ -2,18 +2,39 @@ body {
     font-family: Roboto, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     box-sizing: border-box;
 }
 
+.container {
+    padding-inline: 2rem;   
+    max-width: 1200px;      
+    margin-inline: auto;
+    width: 100%;
+}
 
+button{
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+#philosophical, #footer{
+    background-color: #1F2937;
+}
+
+/* Start for every section */
 nav{
     display: flex;
     justify-content: space-between;
-    background-color: #1F2937;
-    padding: 16px;
     align-items: center;
+}
+
+.head a{
+    color: #f9faf8;
+    font-size: 24px;
 }
 
 .links{
@@ -33,7 +54,116 @@ a {
     color: #e5e7eb;
     font-size: 18px;
 }
+/* Here starts first section */
+.first-section{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-grow: 1;
+}
 
+.first-section-child{
+    flex: 1;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.first-section-child img{
+    height: auto;
+    max-width: 100%;
+}
+
+h1{
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+
+.first-section-child button{   
+    background-color: #3882f6;
+    border: 1px solid #3882f6;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+/* Here starts the mangas section */
+
+
+
+.second-section h2{
+    text-align: center;
+    color: #1F2937;
+}
+.title{
+    font-size: 36px;
+    font-weight: 900;
+}
+.second-section-images{
+    display:flex;
+    gap: 36px;
+    justify-content: center;
+}
+
+.container-images{
+    max-width: 200px;
+    text-align: center;
+}
+
+.container-images img{
+    height: 200px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.container-images p{
+    color: gray;
+
+}
+
+/* third section quote */
+#discipline{
+    background-color: #e5e7eb;
+    height: 400px;
+    display: flex;
+}
+
+.third-section{
+    color: #1F2937;
+    font-size: 24px;
+    font-size: 36px;
+    font-weight: 300;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.third-section p{
+    font-weight: 900;
+    text-align: right;
+}
+
+/* fourth section */
+
+.fourth-section .cta{
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+
+    display: flex;
+    align-items: center   ;
+}
+
+.fourth-section button{
+    background-color: #3882f6;
+    border: 2px solid #e5e7eb;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+/* Here is left the footer */
 footer{
     display: flex;
     background-color: #1F2937;
